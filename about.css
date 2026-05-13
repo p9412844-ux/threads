@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+/* About Section Styles */
+.about-section {
+    padding: 30px 5%;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-header h2 span {
+    color: #0095f6; /* Threads style pink/reddish touch */
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.features-list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.features-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.features-list li i {
+    color: #0095f6;
+}
+
+.btn-about {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #0095f6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-about:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Stats Boxes */
+.about-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.stat-box {
+    background: #181818;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.stat-box:hover {
+    border-color: #ff3366;
+    transform: translateY(-5px);
+}
+
+.stat-box h4 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.stat-box p {
+    color: #888;
+}
+
+/* Responsive for About */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+}

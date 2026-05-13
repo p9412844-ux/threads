@@ -1,0 +1,130 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #888;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+/* Main Container */
+.container {
+    max-width: 650px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* Input Card */
+.input-section {
+    background: #161616;
+    border-radius: 15px;
+    border: 1px solid #2a2a2a;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.input-link {
+    padding: 25px;
+    text-align: left;
+    background: #1a1a1a;
+}
+
+.input-link label {
+    display: block;
+    color: #666;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.input-link input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.input-link input::placeholder {
+    color: #333;
+}
+
+/* Button */
+.download-btn {
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    border-top: 1px solid #2a2a2a;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease;
+    text-transform: capitalize;
+}
+
+.download-btn:hover {
+    background: #222;
+}
+
+.download-btn i {
+    color: #fff;
+}
